@@ -24,6 +24,7 @@ export const getBeers = async (
         ok: false,
         message: 'Error al buscar cervezas'
     };
+    console.log(error)
     res.status(500).json(response);
   }
 };

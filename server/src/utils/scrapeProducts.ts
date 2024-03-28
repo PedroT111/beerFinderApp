@@ -95,6 +95,5 @@ export const scrapeByBeer = async (beer: string): Promise<Result[]> => {
     }
   }
   await browser.close(); 
-  console.log(results)
   return results;
 }
