@@ -94,6 +94,7 @@ export const scrapeByBeer = async (beer: string): Promise<Result[]> => {
        page ? await page.close() : null;
     }
   }
+  console.log(results)
   await browser.close(); 
   return results;
 }

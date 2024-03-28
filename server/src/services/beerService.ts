@@ -6,6 +6,7 @@ export const getBeerData = async (brand: string): Promise<Result[]> => {
     const beerList: Result[] = await scrapeByBeer(brand);
     return beerList;
   } catch (error) {
+    console.log(error)
     throw new Error("Error al raspar datos de cerveza");
   }
 };
