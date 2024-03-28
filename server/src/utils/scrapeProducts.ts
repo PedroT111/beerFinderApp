@@ -67,7 +67,7 @@ const setBrandInUrl = (beerBrand: string, sites: Site[]) => {
 };
 
 export const scrapeByBeer = async (beer: string): Promise<Result[]> => {
-  const browser = await puppeteer.launch({headless:false});
+  const browser = await puppeteer.launch();
   const sitesSetted = setBrandInUrl(beer, sites);
   const results: Result[] = [];
   let page = null;
